@@ -1,0 +1,17 @@
+openai==1.93.2
+numpy==2.3.1
+torch==2.7.1
+PyYAML==6.0.2
+SQLAlchemy==2.0.41
+asyncpg==0.30.0
+alembic==1.16.3
+python-dotenv==1.1.1
+fastapi==0.116.0
+starlette==0.46.2
+uvicorn==0.35.0
+aiocache==0.12.3
+cachetools-async==0.0.5
+cachetools==6.1.0
+pytest==8.4.1
+bcrypt==4.3.0
+email_validator==2.2.0
