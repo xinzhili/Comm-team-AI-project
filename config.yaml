@@ -1,0 +1,16 @@
+token:
+  secret_key: "common-team-ai-project-250714"
+  algorithm: "HS256"
+  access_token_expire_minutes: 30
+  password_reset_token_expire_minutes: 15
+
+database_url: os.environ/DATABASE_URL
+
+genai:
+  base_url: https://api.deepseek.com
+  api_key: os.environ/DEEPSEEK_API_KEY
+  models:
+    - model_name: deepseek-chat
+      type: chat
+    - model_name: xxx
+      type: embedding

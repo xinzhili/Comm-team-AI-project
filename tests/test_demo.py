@@ -2,7 +2,7 @@ import torch
 import numpy as np
 import timeit
 
-def test01():
+def test_01():
     print("pytorch示例")
     #创建张量
     x = torch.tensor([1.,2.,3.])
@@ -13,7 +13,7 @@ def test01():
     z = x+y
     print(f"z = {z}")
 
-def test02():
+def test_02():
     #python List
     #可混合存储不同类型
     py_list = [1, 2, 3, 4.5, "hello"]
@@ -25,7 +25,7 @@ def test02():
     for index,element in enumerate(py_list):
         print(f"索引：{index},元素：{element}")
 
-def test03():
+def test_03():
     #Numpy同构元素，元素类型必须一致
     arr1 = np.array([1, 2, 3])#整数数组
     arr2 = np.array([1.2, 3.4, 5.6])#浮点型数组
@@ -42,7 +42,7 @@ def test03():
     print("mat shape",mat.shape)
     
 
-def test04():
+def test_04():
     #Numpy内存连续，计算效率高(对比python List)
     # 创建大型数组/列表
     #np_array = np.arange(1000000)
@@ -68,7 +68,7 @@ def test04():
     print(f"NumPy 操作耗时: {numpy_time/1000:.6f} 秒/次")  # 计算每次操作的平均耗时
     print(f"列表操作耗时: {list_time/1000:.6f} 秒/次")  # 计算每次操作的平均耗时
 
-def test05():
+def test_05():
     #Numpy和List之间的关系
     #List 是 NumPy 数组的 “基础”，NumPy 数组可从 List 创建
     arr = np.array([1, 2, 3])
@@ -78,10 +78,3 @@ def test05():
     print(arr.tolist())
     print(arr.dtype)
 #Tensor和NumPy数组的转换之后会详细讲解
-
-if __name__ == '__main__':
-    #test01()
-    #test02()
-    #test03()
-    test04()
-    #test05()
